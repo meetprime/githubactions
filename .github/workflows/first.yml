@@ -12,12 +12,12 @@ on:
 
 jobs:
   Build:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: 
       - run: | 
           echo "Hello hello "
           
-      - uses: action/checkout
+      - uses: action/checkout@v3.3.0
 
       - name: List files in repo
         run: | 
