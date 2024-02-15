@@ -38,7 +38,7 @@ jobs:
 
   stg:
     runs-on: ubuntu-latest
-    #if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch'
     needs: Build
     environment: stg
     steps:
